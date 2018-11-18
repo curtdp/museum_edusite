@@ -1,0 +1,231 @@
+html{
+    font-size: 14px;
+  }
+  
+  @media screen and (min-width: 400px){
+    html{
+      font-size: 16px;
+    }
+  }
+  
+  @media screen and (min-width: 800px){
+    html{
+      font-size: 18px;
+    }
+  }
+  
+  @media screen and (min-width: 1200px){
+    html{
+      font-size: 20px;
+    }
+  }
+  
+  body {  
+    
+    width:100%;  
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    font-family: "Nanum Gothic", sans-serif;
+  }
+  
+  .header-wrapper{
+    box-sizing:border-box;
+    padding: 0.6rem;
+    margin:0;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(11, 26, 238);
+    z-index: 5000;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+  
+  .header-wrapper .header-wrapper__logo-wrapper{
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+  .header-wrapper .header-wrapper__logo-wrapper .header-wrapper__logo-wrapper{
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+  
+  .header-wrapper .header-wrapper__nav{
+    height:  3.2rem;
+    max-width: 50%;
+    color: #fff;
+    padding: 0;
+    margin:0;
+    flex: 1 1 auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .header-wrapper .header-wrapper__nav .header-wrapper__ul{
+    position:relative;
+    padding: 0;
+    margin: 0;
+    flex: 1 1 auto;
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+  }
+  
+  
+  .header-wrapper .header-wrapper__nav a{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    
+  }
+  
+  .tickets{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color:rgba(0, 0, 0, 0.0);
+  }
+  
+  .tickets svg{
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  
+  .mobile-menu{
+    display: inline-block;
+  }
+  .descktop-menu{
+    display:none;
+  }
+  
+  @media screen and (min-width: 750px){
+    .descktop-menu{
+      display:inline-block;
+    }
+    .mobile-menu{
+      display: none;
+    }
+  }
+  
+  
+  
+  .search-form__button{
+    color: white;
+    flex: 1 1 auto;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgb(11, 26, 238); 
+    box-sizing: border-box;
+    
+  }
+  
+  .header-wrapper .menu-button{
+    margin:0;
+    padding:0 10px 0 0;
+    position: relative;
+    height:2.5rem;
+    width:2.5rem;
+  }
+  
+  .header-wrapper .menu-button > button{
+    position:fixed;
+    height:2.5rem;
+    width:2.5rem;
+    padding:0;
+    margin:0;  
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.6rem;
+    font-weight: bold;
+    background-color: rgb(11, 26, 238);
+    margin-left:10px;
+    box-sizing: border-box;
+    border: 2px solid rgb(255, 255, 255);
+  }
+  
+  .header-wrapper .menu-button > button:hover{
+    color:rgb(11, 26, 238);
+    background-color: #fff;
+  }
+  
+
+  .header-wrapper__title-wrap{
+    position: absolute;
+    bottom:0;
+    height:100%;
+    font-family: "Fjalla One", sans-serif;
+    color: white;
+    padding:0;
+    margin:0;
+    text-transform: uppercase;
+    font-size:1.5rem;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: end;
+    
+  }
+
+  .header-wrapper__title-wrap .title-wrap__title{
+   display:block;
+   align-self: end;
+   padding-left: 3.5rem;
+   margin:0;
+  }
+
+  .plane-visit__content{
+    margin: 0;
+    padding: 0 3.5rem 0 3.5rem ;
+    
+    
+  }
+
+  .two-position-grid, .four-position-grid{
+    display:grid;
+    grid-template-columns: 1fr;
+  }
+
+  @media screen and (min-width: 750px){
+
+    .two-position-grid{
+      grid-template-columns: repeat( 2, 1fr);
+      grid-column-gap: 30px;
+  }
+    .four-position-grid{
+      grid-template-columns: repeat( 2, 1fr);
+      grid-column-gap: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1000px){
+    .four-position-grid{
+      grid-template-columns: repeat( 4, 1fr);
+      grid-column-gap: 30px;
+    }
+  }
+
+
+  
+
+  .content-display-flex-collumn{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-display-flex-row{
+    display: flex;
+    flex-direction: row;
+  }
+
+
+
+
+
