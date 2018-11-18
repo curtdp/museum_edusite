@@ -1,0 +1,341 @@
+/* $blue: rgb(11, 26, 238); */
+
+html{
+  font-size: 16px
+}
+
+body {  
+  
+  min-width:140px;  
+  background-color: rgb(255, 255, 255);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  font: 16px "Nanum Gothic", sans-serif;
+}
+
+@media screen and (min-width: 750px){
+  body{
+    font-size: 26px;
+  }
+}
+
+
+h2{
+  font-family:"Fjalla One";
+}
+
+.header{
+  box-sizing:border-box;
+  padding: 0.6rem;
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  z-index: 9999;
+}
+
+.logo{
+  width: 3.2rem;
+  min-width: 50px;
+  height: 3.2rem;
+  min-height: 50px;
+  margin-right: auto;
+  float:left;
+}
+
+.header__nav{
+  height: 100%;
+  float:right;
+  color: #fff;
+  /*display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end ;*/
+}
+
+.header__nav .header__ul{
+  float: left;
+  padding: 0 0.6rem;
+  margin: 0;
+  margin-right: 50px;
+  background-color: #000;
+  /* align-items: center; */
+  display: flex;
+  top:0;
+  list-style: none;
+}
+
+
+.header__nav a{
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  /* display:block; */
+  height:2.5rem;
+  width:2.5rem;
+  flex:1;
+}
+
+@media screen and (min-width: 750px){
+  .header__nav a{
+    font-size:14px;
+    font-weight: bold;
+    
+    width:6rem;
+    flex:1;
+  }
+}
+
+
+.descktop-menu{
+  display:none;
+}
+@media  (min-width: 750px){
+  .descktop-menu{
+    display:inline-block;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 750px){
+  .mobile-menu{
+    display: none;
+  }
+}
+
+.search-form__button{
+  width: 3rem;
+  background-color: #000;
+  border: 1px solid #000; 
+  box-sizing: border-box;
+}
+
+.header .menu-button > button{
+  height:2.5rem;
+  width:2.5rem;
+  float: left;
+  position:fixed;
+  padding:0px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 0.6rem;
+  font-weight: bold;
+  background-color: rgb(11, 26, 238);
+  
+  margin-left:10px;
+  box-sizing: border-box;
+  border: 2px solid rgb(11, 26, 238);
+}
+
+header .menu-button > button:hover{
+  color:rgb(11, 26, 238);
+  background-color: #fff;
+}
+
+.slider {
+  padding:0;
+  margin:0;
+  width:100%;
+}
+
+.slider-image{
+  position: relative;
+  overflow: hidden;
+  height: 80vh;
+}
+
+.slider-image img{
+  margin: -20em -35em -35em -35em; 
+  z-index:-9999;
+  object-fit: fill;
+}
+
+.content-in-slider{
+  width: 100%;
+  max-height: inherit;
+  position: absolute;
+  bottom:0;
+  left:0;
+  display: grid;
+  grid-template-columns: 10fr 1fr;
+  grid-template-rows: auto;
+}
+
+.content-in-slider .slider-content-header{
+  color: #fff;
+  font-size: 2em;
+  text-transform: uppercase;
+  margin-left: 1em;
+  margin-right: 1em;
+  
+}
+
+.slider-buttons{
+  padding-right:30px;
+  padding-bottom: 10px;
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 30px;
+  justify-items: end;
+  align-content: end;
+  gap: 20px;  
+}
+
+.slider-navigation{
+  width:30px;
+  height:30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border:2px solid #fff;
+  border-radius: 50%;
+}
+
+.row{
+  margin-top: 1em;
+  margin-left: 2em;
+  margin-right: 2em;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.row h2{
+  font-size: 1em;
+}
+
+.row p{
+  font-size: .8em;
+}
+
+.row .schedule{
+  order: -1;
+  font-family: monospace;
+}
+
+.row .schedule>h2{
+  
+  color: #000;
+}
+
+.row .schedule>p{
+  color: #333;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+.row .exhibition{
+  margin-top: 20px;
+  margin-right: 20px;
+  background-color: rgb(11, 26, 238);
+  width: 250px;
+  height: 40px;
+}
+
+.row .exhibition a{
+  
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: -webkit-baseline-middle;
+}
+
+.row .journey{
+  margin-left: 20px;
+  border-left: 2px solid #333;
+  font-size: 0.8em;
+  padding-left: 30px;
+}
+
+.row .calendar ul{
+  display:flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.row .calendar li{
+  height: 30px;
+  width: 300px;
+  flex:2;
+  display: flex;
+  border: 2px solid #000;
+}
+
+.row .calendar li>div{
+  background-color: gray;
+}
+.row .calendar li>a{
+  text-decoration: none;
+}
+.row .calendar li:last-child{
+  text-decoration: none;
+}
+
+.row .image-row{
+  flex:2;
+  box-sizing: border-box;
+}
+
+.row .image-row img{
+  flex:2;
+  width: 100%
+}
+
+.banner{
+  width:100%;
+  margin:0;
+  padding:0;
+  background-color: gray;
+}
+
+
+.mosaic-grid{
+  display:grid;
+  grid-template-columns: repeat( 5, 1fr);
+  gap: 20px;
+}
+
+.section-flex{
+  display: flex;
+}
+
+
+@media screen and (min-width: 750px){
+  
+   
+  
+
+  
+
+  
+
+  /* .descktop-menu{
+    
+    display: inline-block;
+    margin:0px;
+    padding:0;
+    text-align: center;
+    vertical-align: middle;
+  } */
+  
+  
+  .slider-image img{
+    margin: -20em -35em -35em -35em; 
+    z-index:-9999;
+  }
+
+  .row{
+    margin-left: 2em;
+    margin-right: 2em;
+    
+    flex-direction: row;
+  }
+  .row .schedule{
+    order: 0;
+    
+  }
+  
+  
+  
+}
+
+

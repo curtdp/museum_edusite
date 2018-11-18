@@ -1,0 +1,377 @@
+
+/*mediaqueries*/
+/*
+@media screen and (min-width: 400px){
+  
+}
+
+@media screen and (min-width: 800px){
+  
+}
+
+@media screen and (min-width: 1200px){
+  
+}
+*/
+html{
+  font-size: 12px;
+}
+
+@media screen and (min-width: 400px){
+  html{
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 800px){
+  html{
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  html{
+    font-size: 26px;
+  }
+}
+
+body {  
+  
+  width:100%;  
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  font-family: "Nanum Gothic", "Fjalla One", sans-serif;
+}
+
+.header{
+  box-sizing:border-box;
+  padding: 0.6rem;
+  position: absolute;
+  width: 100%;
+  height: 3.2;
+  z-index: 5000;
+  display:flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+
+.logo{
+  width: 3.2rem;
+  height: 3.2rem;
+}
+.logo svg{
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.header__nav{
+  height:  3.2rem;
+  max-width: 50%;
+  color: #fff;
+  padding: 0;
+  margin:0;
+  flex: 1 1 auto;
+  display:flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header__nav .header__ul{
+  position:relative;
+  padding: 0;
+  margin: 0;
+  flex: 1 1 auto;
+  background-color: #000;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+
+
+.header__nav a{
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  
+}
+
+.tickets{
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color:rgba(0, 0, 0, 0.0);
+}
+
+.tickets svg{
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.mobile-menu{
+  display: inline-block;
+}
+.descktop-menu{
+  display:none;
+}
+
+@media screen and (min-width: 750px){
+  .descktop-menu{
+    display:inline-block;
+  }
+  .mobile-menu{
+    display: none;
+  }
+}
+
+
+
+.search-form__button{
+  color: white;
+  flex: 1 1 auto;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #000;
+  border: 1px solid #000; 
+  box-sizing: border-box;
+  
+}
+
+.header .menu-button{
+  margin:0;
+  padding:0;
+  position: relative;
+  height:2.5rem;
+  width:2.5rem;
+}
+
+.header .menu-button > button{
+  position:fixed;
+  height:2.5rem;
+  width:2.5rem;
+  padding:0;
+  margin:0;  
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 0.6rem;
+  font-weight: bold;
+  background-color: rgb(11, 26, 238);
+  margin-left:10px;
+  box-sizing: border-box;
+  border: 2px solid rgb(11, 26, 238);
+}
+
+header .menu-button > button:hover{
+  color:rgb(11, 26, 238);
+  background-color: #fff;
+}
+
+.slider {
+  padding:0;
+  margin:0;
+  width:100%;
+}
+
+.slider-image{
+  position: relative;
+  overflow: hidden;
+  width:100%;
+  height: 80vh;
+}
+
+.slider-image img{
+  /* margin: -20em -35em -35em -35em;  */
+  z-index:-9999;
+  object-fit: cover;
+  object-position: -500px -850px;
+}
+
+.content-in-slider{
+  width: 100%;
+  max-height: inherit;
+  position: absolute;
+  bottom:0;
+  left:0;
+  display: grid;
+  grid-template-columns: 10fr 1fr;
+  grid-template-rows: auto;
+}
+
+.content-in-slider .slider-content-header{
+  color: #fff;
+  font-size: 2em;
+  text-transform: uppercase;
+  margin-left: 1em;
+  margin-right: 1em;
+  
+}
+
+.slider-buttons{
+  padding-right:30px;
+  padding-bottom: 10px;
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 30px;
+  justify-items: end;
+  align-content: end;
+  gap: 20px;  
+}
+
+.slider-navigation{
+  width:30px;
+  height:30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border:2px solid #fff;
+  border-radius: 50%;
+}
+
+.slider-content-header{
+  font-family:"Fjalla One";
+  font-size: 18px;
+}
+
+.row{
+  margin-top: 1em;
+  margin-left: 2em;
+  margin-right: 2em;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row h2{
+  font-size: 2em;
+}
+
+.row p{
+  font-size: 1em;
+}
+
+.row .schedule{
+  order: -1;
+  font-family: monospace;
+}
+
+.row .schedule>h2{
+  
+  color: #000;
+}
+
+.row .schedule>p{
+  color: #333;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+.row .exhibition{
+  margin-top: 20px;
+  margin-right: 20px;
+  background-color: rgb(11, 26, 238);
+  width: min-content;
+  height: 40px;
+}
+
+.row .exhibition a{
+  
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: -webkit-baseline-middle;
+}
+
+.row .journey{
+  margin-left: 20px;
+  border-left: 2px solid #333;
+  font-size: 0.8em;
+  padding-left: 30px;
+}
+
+.row .calendar ul{
+  display:flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.row .calendar li{
+  height: 30px;
+  width: 300px;
+  flex:2;
+  display: flex;
+  border: 2px solid #000;
+}
+
+.row .calendar li>div{
+  background-color: gray;
+}
+.row .calendar li>a{
+  text-decoration: none;
+}
+.row .calendar li:last-child{
+  text-decoration: none;
+}
+
+.row .image-row{
+  flex:2;
+  box-sizing: border-box;
+}
+
+.row .image-row img{
+  flex:2;
+  width: 100%
+}
+
+.banner{
+  width:100%;
+  margin:0;
+  padding:0;
+  background-color: gray;
+}
+
+
+@media screen and (min-width: 750px){
+  
+   
+  
+
+  
+
+  
+
+  /* .descktop-menu{
+    
+    display: inline-block;
+    margin:0px;
+    padding:0;
+    text-align: center;
+    vertical-align: middle;
+  } */
+  
+  
+  /* .slider-image img{
+    margin: -20em -35em -35em -35em; 
+    z-index:-9999;
+  } */
+
+  .row{
+    margin-left: 2em;
+    margin-right: 2em;
+    
+    flex-direction: row;
+  }
+  .row .schedule{
+    order: 0;
+    
+  }
+  
+  
+  
+}
+
+
