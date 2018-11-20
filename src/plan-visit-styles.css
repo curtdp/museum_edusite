@@ -355,11 +355,24 @@ body {
 .cards-row__plan-visit-block .cards-row__header-row{
   font-size: 1.2rem;
   font-weight: bold;
+  padding-bottom:3rem;
+  position:relative;
+}
+
+.cards-row__plan-visit-block .cards-row__visit-cards{
+  list-style: none;
+  margin:0;
+  padding: 0;
+  position:relative;
+  
+  background-color: #f0f3f3;
+  z-index: -9999;
 }
 
 .cards-row__visit-cards{
   display:grid;
   grid-template-columns: 1fr;
+  
 }
 
 @media screen and (min-width: 750px){
@@ -376,28 +389,15 @@ body {
   }
 }
 
-
-.cards-row__plan-visit-block .cards-row__visit-cards{
-  list-style: none;
-  margin:0;
-  padding: 0;
-  position:relative;
-  height:50%;
-  
-  background-color: #f0f3f3;
-  z-index: -9999;
-}
-
 .cards-row__plan-visit-block .cards-row__visit-cards .visit-cards__card-block{
   position:relative;
-  top:2rem;
+  margin-top:-3rem;
   z-index:-1000;
 }
 
 .cards-row__plan-visit-block .cards-row__visit-cards .visit-cards__card-block .card-block__card-img .img{
   width:100%;
   
-  /* object-fit:cover; */
 }
 
 .cards-row__visit-cards .card-block__card-title{
@@ -422,9 +422,8 @@ body {
 
 
 /*BEGIN .plane-visit__footer-content */
-.plane-visit__footer-content{
+.plane-visit__footer-content {
   margin: 0;
-  margin-top:3rem;
   padding: 0 3.5rem 0 3.5rem ;
   width:100%;
   display:grid;
